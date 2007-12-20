@@ -13,6 +13,7 @@ Source:  %module-%version.tar.bz2
 URL: http://gtk2-perl.sf.net/
 BuildRequires: perl-devel
 BuildArch: noarch
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This module tries to make it easy to build Perl extensions that use
