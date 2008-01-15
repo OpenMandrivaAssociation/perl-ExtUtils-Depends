@@ -1,7 +1,7 @@
 %define module ExtUtils-Depends
 %define name perl-%module
 %define version 0.205
-%define release %mkrel 5
+%define release %mkrel 6
 
 Summary: Perl module for further extending extensions
 Name:    %{name}
