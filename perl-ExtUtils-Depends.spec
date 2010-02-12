@@ -1,19 +1,18 @@
-%define module ExtUtils-Depends
-%define name perl-%module
-%define version 0.302
-%define release %mkrel 1
+%define upstream_name    ExtUtils-Depends
+%define upstream_version 0.302
 
-Summary: Perl module for further extending extensions
-Name:    %{name}
-Version: %{version}
-Release: %{release}
-License: GPL or Artistic
-Group:   Development/Perl
-Source:  %module-%version.tar.bz2
-URL: http://gtk2-perl.sf.net/
-BuildRequires: perl-devel
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 2
+
+Summary:    Perl module for further extending extensions
+License:    GPL+ or Artistic
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/ExtUtils/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildArch: noarch
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module tries to make it easy to build Perl extensions that use
@@ -22,12 +21,12 @@ that a perl extension is treated like a shared library that provides
 also a C and an XS interface besides the perl one.
 
 %prep
-%setup -q -n %module-%version
+%setup -q -n %{upstream_name}-%{upstream_version}
 find -type d -name CVS | rm -fr
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 
 %build
-make
+%make
 
 %check
 %make test
@@ -44,4 +43,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes
 %{_mandir}/*/*
 %{perl_vendorlib}/*
-
