@@ -1,9 +1,9 @@
 %define upstream_name    ExtUtils-Depends
-%define upstream_version 0.302
+%define upstream_version 0.303
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Perl module for further extending extensions
 License:    GPL+ or Artistic
