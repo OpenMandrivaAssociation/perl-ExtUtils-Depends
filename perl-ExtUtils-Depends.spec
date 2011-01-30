@@ -1,5 +1,5 @@
 %define upstream_name    ExtUtils-Depends
-%define upstream_version 0.303
+%define upstream_version 0.304
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
