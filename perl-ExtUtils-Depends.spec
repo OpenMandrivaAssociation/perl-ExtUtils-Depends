@@ -30,17 +30,12 @@ find -type d -name CVS | rm -fr
 %make
 
 %check
-%make test
+make test
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-, root, root)
 %doc Changes
 %{_mandir}/*/*
 %{perl_vendorlib}/*
