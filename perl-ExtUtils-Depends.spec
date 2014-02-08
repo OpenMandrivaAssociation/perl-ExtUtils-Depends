@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	7
+Release:	8
 
 Summary:	Perl module for further extending extensions
 License:	GPL+ or Artistic
