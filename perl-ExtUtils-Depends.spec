@@ -1,7 +1,8 @@
 %define modname	ExtUtils-Depends
-%define modver 0.307
+%define modver 0.308
 
 Summary:	Perl module for further extending extensions
+
 
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
@@ -37,6 +38,7 @@ make test
 %doc Changes
 %{perl_vendorlib}/*
 %{_mandir}/man3/*
+
 
 
 
