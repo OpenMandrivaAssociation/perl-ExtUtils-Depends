@@ -1,12 +1,12 @@
 %define modname	ExtUtils-Depends
-%define modver 0.308
+%define modver 0.401
 
 Summary:	Perl module for further extending extensions
 
 
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	3
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
@@ -38,7 +38,3 @@ make test
 %doc Changes
 %{perl_vendorlib}/*
 %{_mandir}/man3/*
-
-
-
-
