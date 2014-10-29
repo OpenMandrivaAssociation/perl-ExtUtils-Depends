@@ -3,5 +3,6 @@ removed_sources:
   ExtUtils-Depends-0.306.tar.gz: 56c8cfb5cbcd3f7750099640b683f12e1ad78f74
   ExtUtils-Depends-0.307.tar.gz: 1c8361c489c9c8e84b5e31460ba310c55288bc28
   ExtUtils-Depends-0.308.tar.gz: a1a5192d3ac50adc3fdaee68312760a023961dc7
-sources:
   ExtUtils-Depends-0.401.tar.gz: f3d9fc41bddee12a803f2431ac8cb5f0246197e5
+sources:
+  ExtUtils-Depends-0.402.tar.gz: 7ca8900eaeda6afa495c9b0d36afa711ee71f330
