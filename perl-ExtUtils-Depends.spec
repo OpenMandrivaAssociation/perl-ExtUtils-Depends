@@ -1,12 +1,12 @@
 %define modname	ExtUtils-Depends
-%define modver 0.402
+%define modver 0.404
 
 Summary:	Perl module for further extending extensions
 
 
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	2
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
@@ -23,7 +23,7 @@ also a C and an XS interface besides the perl one.
 %prep
 %setup -qn %{modname}-%{modver}
 find -type d -name CVS | rm -fr
-%{__perl} Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 
 %build
 %make
