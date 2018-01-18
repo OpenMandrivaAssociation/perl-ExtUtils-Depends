@@ -1,5 +1,5 @@
 %define modname	ExtUtils-Depends
-%define modver 0.404
+%define modver 0.405
 
 Summary:	Perl module for further extending extensions
 
