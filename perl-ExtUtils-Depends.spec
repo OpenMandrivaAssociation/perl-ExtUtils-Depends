@@ -1,12 +1,12 @@
 %define modname	ExtUtils-Depends
-%define modver 0.405
+%define modver 0.8000
 
 Summary:	Perl module for further extending extensions
 
 
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	3
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
@@ -14,6 +14,10 @@ Source0:	http://www.cpan.org/modules/by-module/ExtUtils/%{modname}-%{modver}.tar
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl-devel
+BuildRequires: perl(Data::Dumper)
+BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(File::Spec)
+BuildRequires: perl(IO::File)
 
 %description
 This module tries to make it easy to build Perl extensions that use
@@ -27,13 +31,10 @@ find -type d -name CVS | rm -fr
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 
 %build
-%make
-
-%check
-make test
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc Changes
