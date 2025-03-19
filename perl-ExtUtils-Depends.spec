@@ -4,8 +4,8 @@ Summary:	Perl module for further extending extensions
 
 
 Name:		perl-%{modname}
-Version:	0.8001
-Release:	2
+Version:	0.8002
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{modname}
