@@ -1,16 +1,15 @@
 %define modname	ExtUtils-Depends
 
 Summary:	Perl module for further extending extensions
-
-
 Name:		perl-%{modname}
 Version:	0.8002
-Release:	1
+Release:	2
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{modname}
+Url:		https://metacpan.org/pod/ExtUtils::Depends
 Source0:	http://www.cpan.org/modules/by-module/ExtUtils/%{modname}-%{version}.tar.gz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl-devel
 BuildRequires:	perl(Data::Dumper)
